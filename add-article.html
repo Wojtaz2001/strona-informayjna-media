@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj artykuł</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="add-article.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dodaj artykuł</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="polityka.html">Polityka</a></li>
+            <li><a href="sport.html">Sport</a></li>
+            <li><a href="add-article.html">Dodaj artykuł</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="add-article">
+            <h2>Dodaj artykuł</h2>
+            <form id="article-form">
+                <div class="form-group">
+                    <label for="title">Tytuł:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Treść:</label>
+                    <textarea id="content" name="content" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="category">Kategoria:</label>
+                    <select id="category" name="category" required>
+                        <option value="polityka">Polityka</option>
+                        <option value="sport">Sport</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="image">Zdjęcie:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <button type="submit">Dodaj artykuł</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Stronę wykonał: Twój adres e-mail</p>
+    </footer>
+</body>
+</html>
